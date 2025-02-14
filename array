@@ -1,0 +1,24 @@
+class array{
+    public static void main(String args[]){
+        int arr[][][]=new int[3][4][7];
+        for(int i=0;i<3;i++)
+            {   for(int j=0;j<4;j++){
+                    for(int k=0;k<7;k++){
+                        arr[i][j][k]=i*j*k;
+
+                    }
+                }
+            }
+        
+            for(int i=0;i<3;i++)
+            {   for(int j=0;j<4;j++){
+                    for(int k=0;k<7;k++){
+                    System.out.println(arr[i][j][k] +" ");
+                    System.out.println();
+                    }
+                    System.out.println();
+                }
+            }
+        
+    }
+}
