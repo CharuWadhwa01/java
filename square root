@@ -1,0 +1,21 @@
+class Calc {
+    double i;
+    double x;
+
+    // Constructor to initialize i and compute x
+    Calc(double i) {
+        this.i = i;
+        this.x = Math.sqrt(i);
+    }
+
+    double getSquareRoot() {
+        return x;
+    }
+}
+
+class Calculator {
+    public static void main(String[] args) {
+        Calc c1 = new Calc(20); // Instantiate Calc with a value of 20
+        System.out.println("Square root is: " + c1.getSquareRoot());
+    }
+}
