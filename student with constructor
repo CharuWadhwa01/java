@@ -1,0 +1,26 @@
+class Student{
+    int rollno;
+    String name,course;
+    float fee;
+    Student(String course,int rollno,String name){
+        this.course=course;
+        this.rollno=rollno;
+        this.name=name;
+    }
+    Student(String course,int rollno,String name,float fee){
+    this(course,rollno,name);
+    this.fee=fee;
+    }
+    void display(){
+        System.out.println(rollno+" "+name+" "+course+" "+fee);
+    } 
+}
+class Demo{
+    public static void main(String args[]) {
+        Student s1=new Student("java",11,"sumit");
+        Student s2=new Student ("java",13,"sumit",5000f);
+        s1.display();
+        s2.display();
+    }
+
+}
